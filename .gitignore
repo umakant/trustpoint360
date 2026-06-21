@@ -23,11 +23,25 @@ dist-ssr
 # Local archives
 project.zip
 
+# Env files
+.env
+.env*.local
+
+# Testing / coverage
+coverage
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
+*.pem
 *.suo
 *.ntvs*
 *.njsproj
