@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import logo from "@/assets/trustpoint360-logo.png";
+import { SiteLogo } from "@/components/site-logo";
 
 const groups = [
   {
@@ -27,7 +27,7 @@ export function SiteFooter() {
         <div className="grid gap-10 md:grid-cols-6">
           <div className="md:col-span-2">
             <Link to="/" className="inline-flex">
-              <img src={logo} alt="Trust Point 360" className="h-10 w-auto" />
+              <SiteLogo />
             </Link>
             <p className="mt-4 max-w-sm text-sm text-muted-foreground">
               The Shopify for workforce compliance. Launch your own branded background screening and

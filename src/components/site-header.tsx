@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Menu, Moon, Sun, X } from "lucide-react";
 import { useState } from "react";
-import logo from "@/assets/trustpoint360-logo.png";
+import { SiteLogo } from "@/components/site-logo";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/hooks/use-theme";
 
@@ -21,7 +21,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-border/60 glass">
       <div className="mx-auto flex h-16 max-w-7xl items-center gap-6 px-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex shrink-0 items-center gap-2">
-          <img src={logo} alt="Trust Point 360" className="h-10 w-auto" />
+          <SiteLogo />
         </Link>
 
         <nav className="hidden flex-1 items-center gap-7 md:flex">
