@@ -1,10 +1,9 @@
 import { Link } from "@tanstack/react-router";
 import { Menu, Moon, Sun, X } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/trustpoint360-logo.png";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/hooks/use-theme";
-import logoLight from "@/assets/trustpoint360-light.png.asset.json";
-import logoDark from "@/assets/trustpoint360-dark.png.asset.json";
 
 const nav = [
   { label: "Platform", href: "#features" },
@@ -17,13 +16,12 @@ const nav = [
 export function SiteHeader() {
   const { theme, toggle } = useTheme();
   const [open, setOpen] = useState(false);
-  const logo = theme === "dark" ? logoDark : logoLight;
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 glass">
       <div className="mx-auto flex h-16 max-w-7xl items-center gap-6 px-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex shrink-0 items-center gap-2">
-          <img src={logo.url} alt="Trust Point 360" className="h-8 w-auto" />
+          <img src={logo} alt="Trust Point 360" className="h-10 w-auto" />
         </Link>
 
         <nav className="hidden flex-1 items-center gap-7 md:flex">

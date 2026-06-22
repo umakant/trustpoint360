@@ -1,4 +1,5 @@
-import logoLight from "@/assets/trustpoint360-light.png.asset.json";
+import { Link } from "@tanstack/react-router";
+import logo from "@/assets/trustpoint360-logo.png";
 
 const groups = [
   {
@@ -25,10 +26,9 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-6">
           <div className="md:col-span-2">
-            <img src={logoLight.url} alt="Trust Point 360" className="h-9 w-auto dark:hidden" />
-            <span className="hidden text-2xl font-bold tracking-tight text-foreground dark:inline">
-              Trust Point <span className="text-brand-green">360°</span>
-            </span>
+            <Link to="/" className="inline-flex">
+              <img src={logo} alt="Trust Point 360" className="h-10 w-auto" />
+            </Link>
             <p className="mt-4 max-w-sm text-sm text-muted-foreground">
               The Shopify for workforce compliance. Launch your own branded background screening and
               employee onboarding business in your local market.
